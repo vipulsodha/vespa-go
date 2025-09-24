@@ -1,5 +1,6 @@
 # Vespa YQL Query Builder
 
+[![CI](https://github.com/vipulsodha/vespa-go/workflows/CI/badge.svg)](https://github.com/vipulsodha/vespa-go/actions)
 [![Go Reference](https://pkg.go.dev/badge/github.com/vipulsodha/vespa-go.svg)](https://pkg.go.dev/github.com/vipulsodha/vespa-go)
 [![GitHub release](https://img.shields.io/github/release/vipulsodha/vespa-go.svg)](https://github.com/vipulsodha/vespa-go/releases)
 [![License](https://img.shields.io/github/license/vipulsodha/vespa-go.svg)](LICENSE)
