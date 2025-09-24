@@ -1,5 +1,9 @@
 # Vespa YQL Query Builder
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/vipulsodha/vespa-go.svg)](https://pkg.go.dev/github.com/vipulsodha/vespa-go)
+[![GitHub release](https://img.shields.io/github/release/vipulsodha/vespa-go.svg)](https://github.com/vipulsodha/vespa-go/releases)
+[![License](https://img.shields.io/github/license/vipulsodha/vespa-go.svg)](LICENSE)
+
 A comprehensive, type-safe query builder for Vespa AI that provides a fluent API for constructing YQL (Vespa Query Language) queries. This library replaces manual string building with an intuitive, maintainable, and error-resistant approach to query construction.
 
 ## Table of Contents
@@ -14,6 +18,16 @@ A comprehensive, type-safe query builder for Vespa AI that provides a fluent API
 
 ## Installation
 
+```bash
+go get github.com/vipulsodha/vespa-go@v1.0.0
+```
+
+Or for the latest version:
+```bash
+go get github.com/vipulsodha/vespa-go@latest
+```
+
+Then import in your Go code:
 ```go
 import "github.com/vipulsodha/vespa-go"
 ```
