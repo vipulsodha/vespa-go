@@ -172,6 +172,12 @@ func ecommerceRecommendation() {
 	// Complex recommendation query combining multiple signals
 	queryVector := []float32{0.1, 0.2, 0.3, 0.4, 0.5}
 	userPreferences := []string{"electronics", "gadgets", "smartphones"}
+	
+	// Convert string slice to interface slice for In method
+	prefInterfaces := make([]interface{}, len(userPreferences))
+	for i, v := range userPreferences {
+		prefInterfaces[i] = v
+	}
 
 	query, err := vespa.NewQueryBuilder().
 		Select("id", "title", "price", "brand", "category", "similarity_score").
@@ -179,7 +185,7 @@ func ecommerceRecommendation() {
 		Where(
 			vespa.And(
 				// User's preferred categories
-				vespa.Field("category").In(userPreferences...),
+				vespa.Field("category").In(prefInterfaces...),
 				// Available and in stock
 				vespa.Field("available").Eq(true),
 				vespa.Field("stock").Gt(0),
